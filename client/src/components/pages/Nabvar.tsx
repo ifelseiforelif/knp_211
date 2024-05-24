@@ -46,6 +46,11 @@ export default function Nabvar() {
                   Create Category
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/create_card">
+                  Create Card
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -1,0 +1,11 @@
+.products{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px !important;
+    gap:20px !important;
+}
+.container{
+    margin: 50px auto !important;
+}
+.page-link{
+    cursor: pointer;
+}

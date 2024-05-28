@@ -1,34 +1,28 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import Card from "../Card";
-import IProduct from "../../models/IProduct";
+import ProductCard from "../ProductCard";
+import { useSelector } from "react-redux";
+import ProductType from "../../types/product-type";
+
 
 function ListOfProducts() {
-  const [data, setData] = useState<Array<IProduct>>([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          import.meta.env.VITE_PATH_TO_SERVER + "products"
-        );
-        setData(response.data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-    fetchData();
-  }, []);
+  const products: Array<ProductType> = useSelector((state: any) => {
+    return state.products.products;
+  });
+  
   return (
     <>
-      <div className="row">
-        {data.map((el: IProduct) => {
-          return (
-            <div className="col-md-3" key={el.id}>
-              <Card props={el} />
-            </div>
-          );
-        })}
-      </div>
+      {products.length ? (
+        <div className="row row-cols-1 row-cols-md-3 g-4">
+          {products?.map((el: ProductType) => {
+            return (
+              <div className="col" key={el.id}>
+                <ProductCard props={el} />
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <p>Список продуктів порожній</p>
+      )}
     </>
   );
 }

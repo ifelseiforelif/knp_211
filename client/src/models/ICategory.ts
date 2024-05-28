@@ -1,10 +1,10 @@
 interface ICategory {
     id: string;
-    slug: string;
+    categoryId: string;
     name: string;
     description: string;
     imageUrl: string;
     isActive: boolean;
 }
-
+  
 export default ICategory;

@@ -1,0 +1,205 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f5f5fb;
+    font-family: "ZonaPro Regular";
+}
+
+
+nav {
+    padding: 12px 15px 8px 15px !important;
+    background-color: white;
+}
+
+
+h1, h2 {
+    font-family: "ZonaPro SemiBold";
+    color: #34345f;
+}
+
+
+th, td {
+    background-color: transparent !important;
+    border: none;
+}
+
+
+.navbar-brand {
+    margin-right: 10px;
+    font-family: "Axiforma Bold";
+    color: #34345f;
+}
+
+.nav-item {
+    margin: 0px 8px;
+}
+
+.nav-link {
+    font-family: "ZonaPro SemiBold";
+    color: #b1b1cd;
+}
+
+.nav-link:hover, .nav-link:focus, .active {
+    color: #34345f !important;
+}
+
+
+.btn-primary, .btn-danger {
+    padding: 14px 22px !important;
+    border: none;
+    border-radius: 13px;
+    font-family: "ZonaPro SemiBold";
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: #5e81f4 !important;
+}
+
+.btn-primary:hover {
+    background-color: #4569ea !important;
+}
+
+.btn-danger {
+    background-color: #ff919b !important;
+}
+
+.btn-danger:hover{
+    background-color: #ff747f !important;
+}
+
+
+.text-danger {
+    color: #ff919b !important;
+    font-family: "ZonaPro SemiBold";
+}
+
+
+.action-btn-sm {
+    margin: 4px 0px;
+    padding: 12px 18px 10px 18px !important;
+}
+
+
+.form-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    margin-top: 10px;
+    padding: 50px 50px 60px 50px !important;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.field-label {
+    font-family: "ZonaPro Regular";
+    color: #34345f;
+}
+
+.field {
+    background-color: #f5f5f7;
+    border: none;
+}
+
+
+.home-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+
+.exchange-rates-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.exchange-rates-table {
+    margin-top: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.exchange-rates-tr {
+    background-color: white;
+}
+
+thead .exchange-rates-tr:nth-child(1) {
+    background-color: #4d4cac;
+    font-size: 20px;
+    color: white;
+}
+
+.exchange-rates-tr th {
+    padding: 20px 20px;
+}
+
+.exchange-rates-tr td {
+    padding: 18px 20px;
+    font-family: "ZonaPro Regular";
+    color: #34345f;
+}
+
+
+.card {
+    border: none;
+    border-radius: 17px;
+    overflow: hidden;
+}
+
+.card-title {
+    font-family: "ZonaPro Bold";
+}
+
+
+
+@font-face {
+    font-family: "Axiforma Regular";
+    src: url("assets/fonts/Axiforma-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Axiforma Medium";
+    src: url("assets/fonts/Axiforma-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Axiforma SemiBold";
+    src: url("assets/fonts/Axiforma-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Axiforma Bold";
+    src: url("assets/fonts/Axiforma-Bold.ttf");
+}
+
+@font-face {
+    font-family: "ZonaPro Regular";
+    src: url("assets/fonts/ZonaPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: "ZonaPro SemiBold";
+    src: url("assets/fonts/ZonaPro-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "ZonaPro Bold";
+    src: url("assets/fonts/ZonaPro-Bold.ttf");
+}
+
+@font-face {
+    font-family: "ZonaPro Black";
+    src: url("assets/fonts/ZonaPro-Black.ttf");
+}
